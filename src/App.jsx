@@ -12,13 +12,14 @@ function App() {
         <>
             <GlobalStyle />
             <div style={tempStyle}>
-                <Button handleBtnClick={()=>{}} size="small" icon="notification">button!</Button>
-                <Button size="small">button!</Button>
-                <Button size="medium">button!</Button>
-                <Button size="medium" icon="checkbox" isIconRight={true}>button!</Button>
-                <Button icon="checkbox" isIconRight={true}>button!</Button>
-                <Button icon="checkbox" isIconRight={false}>button!</Button>
-                <Button>button!</Button>
+              <Button onClick={()=>{}} negative={true} icon="notification" isIconRight={true}>Large Button with Icon (right)</Button>
+              <Button size="medium">Medium Button</Button>
+              <Button size="small">Small Button</Button>
+            </div>
+            <div style={tempStyle}>
+              <Button color="danger" onClick={()=>{}} negative={true} icon="checkbox" isIconRight={false}>Large Button with Icon (left)</Button>
+              <Button color="danger" size="medium" >Medium Button</Button>
+              <Button color="danger" size="small">Small Button</Button>
             </div>
         </>
     );

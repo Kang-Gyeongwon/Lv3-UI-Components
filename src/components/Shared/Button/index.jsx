@@ -7,16 +7,17 @@ import Icon from "../Icon";
 // negative: true일 경우 line 버튼
 // onClick: 버튼에 전달할 클릭 이벤트 함수
 // isIconRight: 아이콘 있을 시 위치 텍스트의 오른쪽(true)/왼쪽(false) 선택
-const Button = ({ handleBtnClick, size, negative, icon, isIconRight, children }) => {
-    // ? props로 받아와서 구조분해하면 handleBtnClick이 undefined라고 에러가 난다..?
-    // ? const {handleBtnClick, size, negative, icon, isIconRight} = props;
+const Button = (props) => {
+    const {handleBtnClick, color, size, negative, icon, isIconRight, children} = props;
+    console.log("props ", props);
+    console.log("children ",  children);
     const onBtnClick = () => {
         handleBtnClick !== undefined && handleBtnClick(); // 이벤트 함수가 전달되었을 시 실행
-        alert("click!");
+        alert("click!"); // ! 이벤트 체크용, 이후 제거
     };
 
     return (
-        <StyledButton size={size} negative={negative} onClick={onBtnClick} isIconRight={isIconRight}>
+        <StyledButton color={color} size={size} negative={negative} onClick={onBtnClick} isIconRight={isIconRight}>
             {/* 버튼 내 텍스트 */}
             {children}
             {/* 아이콘 있을 시 Icon 컴포넌트 출력 */}
