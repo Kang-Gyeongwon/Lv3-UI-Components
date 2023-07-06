@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Title, Form, InputlLabel, Inputs, SaveBtn } from "./styled";
 
 const InputBox = () => {
@@ -6,10 +6,14 @@ const InputBox = () => {
     title: "",
     price: 0,
   });
+
   const onInputData = (e) => {
+    const newOnlyNumber = e.target.value.replace(/[^0-9]/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    const formmet = e.target.name === "price" ?
+     newOnlyNumber : e.target.value
     setFormValue({
       ...formValue,
-      [e.target.name]: e.target.value,
+      [e.target.name]: formmet,
     });
   };
 
