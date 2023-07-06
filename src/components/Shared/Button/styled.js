@@ -1,17 +1,5 @@
 import styled, { css } from "styled-components";
 
-// icon 이미지 지정 함수
-const iconUrls = (props) => {
-    switch(props.icon){
-    case 'notification':
-        return 'url(../../../assets/ico-notification.svg)';
-    case 'check':
-        return 'url(../../../assets/ico-checkbox.svg)';
-    default:
-        break;
-}
-}
-
 export const StyledButton = styled.button`
     display: flex;
     flex-direction: ${props => props.isIconRight ? "row" : "row-reverse"};
@@ -35,8 +23,7 @@ export const StyledButton = styled.button`
         display: block;
         width: 1rem;
         height: 1rem;
-        margin-left: 0.25rem;
-        background-image: ${props => iconUrls(props)};
+        ${props => props.isIconRight ? "margin-left: 0.25rem;" : "margin-right: 0.25rem;"};
         background-size: cover;
     }
 
@@ -46,12 +33,22 @@ export const StyledButton = styled.button`
         css`
             height: 1.75rem;
             font-size: 0.75rem;
+
+            & > i {
+                width: 0.75rem;
+                height: 0.75rem;
+            }
         `}
     ${(props) =>
         props.size === "small" &&
         css`
             height: 1.5rem;
             font-size: 0.5rem;
+
+            & > i {
+                width: 0.6rem;
+                height: 0.6rem;
+            }
         `}
 
     // negative
