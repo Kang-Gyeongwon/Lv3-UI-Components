@@ -1,18 +1,21 @@
+import { Title, Form, InputlLabel, Inputs, SaveBtn } from "./styled";
+
 const InputBox = () => {
+
   return (
     <>
-      <h1>Input</h1>
-      <div>
+      <Title>Input</Title>
+      <Form>
         <div>
-          <span>이름</span>
-          <input type="text" />
+          <InputlLabel>이름</InputlLabel>
+          <Inputs type="text" />
         </div>
         <div>
-          <span>가격</span>
-          <input type="text" />
+          <InputlLabel>가격</InputlLabel>
+          <Inputs type="text" />
         </div>
-      </div>
-      <input type="submit" value="저장" />
+        <SaveBtn type="submit" value="저장" />
+      </Form>
     </>
   );
 };
