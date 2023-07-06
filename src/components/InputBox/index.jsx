@@ -8,12 +8,13 @@ const InputBox = () => {
   });
 
   const onInputData = (e) => {
-    const newOnlyNumber = e.target.value.replace(/[^0-9]/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    const formmet = e.target.name === "price" ?
-     newOnlyNumber : e.target.value
+    const newOnlyNumber = e.target.value
+      .replace(/[^0-9]/g, "")
+      .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    const formet = e.target.name === "price" ? newOnlyNumber : e.target.value;
     setFormValue({
       ...formValue,
-      [e.target.name]: formmet,
+      [e.target.name]: formet,
     });
   };
 
