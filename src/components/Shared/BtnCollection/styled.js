@@ -20,7 +20,7 @@ export const MainButton = styled.button`
     }
     if (size === "small") {
       return `
-        width: 100px;
+        width: 100px;a
         height: 40px;
         background-color: ${color};
       `;
