@@ -15,7 +15,7 @@ export const Overlay = styled.div`
 export const ModalContainer = styled.div`
     width: 600px;
     height: 400px;
-    padding: 4rem 2rem;
+    padding: 4rem;
     box-sizing: border-box;
     border-radius: 20px;
     background-color: #fff;
@@ -23,6 +23,9 @@ export const ModalContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    & > div {
+        width: 100%;
+    }
 `;
 
 export const ButtonContainer = styled.div`
