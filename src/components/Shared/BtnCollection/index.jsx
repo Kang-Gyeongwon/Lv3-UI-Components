@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
 
 const BtnCollection = () => {
   return (
-    <div>index</div>
-  )
-}
+    <>
+      <span>Button</span>
+      <button>Large Primary Button</button>
+    </>
+  );
+};
 
-export default BtnCollection
+export default BtnCollection;
