@@ -1,6 +1,7 @@
 import "./App.css";
 import GlobalStyle from "./styles/GlobalStyle";
 import Button from "./components/Shared/Button";
+import BtnCollection from "./components/Shared/BtnCollection";
 
 function App() {
   const tempStyle = {
@@ -16,6 +17,7 @@ function App() {
                 <Button icon="notification" isIconRight={true} size="medium">button!</Button>
                 <Button>button!</Button>
             </div>
+            <BtnCollection />
         </>
     );
 }
