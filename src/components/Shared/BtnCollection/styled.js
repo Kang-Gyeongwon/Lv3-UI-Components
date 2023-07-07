@@ -20,12 +20,20 @@ export const MainButton = styled.button`
     }
     if (size === "small") {
       return `
-        width: 100px;a
+        width: 100px;
         height: 40px;
         background-color: ${color};
       `;
     }
   }};
+
   margin: 4.5px;
   border-radius: 8px;
+  #btn-icon {
+    width:20px;
+    height: 20px;
+    position:relative;
+    top: 5px;
+    left: 3px;
+  }
 `;
