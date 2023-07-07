@@ -10,11 +10,23 @@ const BtnCollection = ({ color, reverseColor, size, comment, icon }) => {
       setIsClicked(false);
     }, 100);
   };
+
+  const onOpenAlert = () => {
+    if (comment === "Large Primary Button") {
+      window.alert("버튼을 만들어보세요");
+    }
+    if (comment === "Large Negative Button") {
+      window.prompt("어렵나요?");
+    }
+  };
   return (
     <MainButton
       color={color}
       reverseColor={reverseColor}
-      onClick={onReverseColor}
+      onClick={() => {
+        onReverseColor();
+        onOpenAlert();
+      }}
       isClicked={isClicked}
       size={size}
     >
