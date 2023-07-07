@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import { MainButton } from "./styled";
 
-const BtnCollection = ({ color, reverseColor, size, comment, icon }) => {
+const BtnCollection = (props) => {
+  const { color, reverseColor, size, comment, icon } = props;
   const [isClicked, setIsClicked] = useState(false);
 
   const onReverseColor = () => {
     setIsClicked(true);
     setTimeout(() => {
       setIsClicked(false);
-    }, 100);
+      onOpenAlert();
+    }, 250);
   };
 
   const onOpenAlert = () => {
@@ -23,10 +25,7 @@ const BtnCollection = ({ color, reverseColor, size, comment, icon }) => {
     <MainButton
       color={color}
       reverseColor={reverseColor}
-      onClick={() => {
-        onReverseColor();
-        onOpenAlert();
-      }}
+      onClick={onReverseColor}
       isClicked={isClicked}
       size={size}
     >
