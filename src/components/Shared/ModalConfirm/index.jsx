@@ -16,7 +16,9 @@ const ModalConfirm = (props) => {
                 <div>{children}</div>
                 <ButtonContainer>
                     <Button handleBtnClick={onToggleModal}>취소</Button>
-                    <Button color="danger" handleBtnClick={onConfirmClick}>확인</Button>
+                    <Button color="danger" handleBtnClick={onConfirmClick}>
+                        확인
+                    </Button>
                 </ButtonContainer>
             </ModalContainer>
         </Overlay>
