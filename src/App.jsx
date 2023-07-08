@@ -1,6 +1,7 @@
 import "./App.css";
 import GlobalStyle from "./styles/GlobalStyle";
 import Button from "./components/Shared/Button";
+import ButtonBox from "./components/ButtonBox";
 
 function App() {
   // ! 버튼 시연을 위한 임시 CSS, 이후 제거 필요
@@ -21,6 +22,7 @@ function App() {
               <Button color="danger" size="medium" >Medium Button</Button>
               <Button color="danger" size="small">Small Button</Button>
             </div>
+            <ButtonBox />
         </>
     );
 }
