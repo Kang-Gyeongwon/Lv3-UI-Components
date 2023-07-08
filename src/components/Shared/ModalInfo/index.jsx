@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../Button";
 import { Overlay, ModalContainer, ButtonContainer } from "../ModalStyle";
 
 const ModalInfo = (props) => {
@@ -11,7 +12,7 @@ const ModalInfo = (props) => {
             <ModalContainer>
                 <div>{children}</div>
                 <ButtonContainer>
-                    <button onClick={onToggleModal}>닫기</button>
+                    <Button onClick={onToggleModal}>닫기</Button>
                 </ButtonContainer>
             </ModalContainer>
         </Overlay>

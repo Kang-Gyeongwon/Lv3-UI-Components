@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../Button";
 import { Overlay, ModalContainer, ButtonContainer } from "../ModalStyle";
 
 const ModalConfirm = (props) => {
@@ -14,8 +15,8 @@ const ModalConfirm = (props) => {
             <ModalContainer>
                 <div>{children}</div>
                 <ButtonContainer>
-                    <button onClick={onToggleModal}>닫기</button>
-                    <button onClick={onConfirmClick}>확인</button>
+                    <Button handleBtnClick={onToggleModal}>취소</Button>
+                    <Button color="danger" handleBtnClick={onConfirmClick}>확인</Button>
                 </ButtonContainer>
             </ModalContainer>
         </Overlay>
