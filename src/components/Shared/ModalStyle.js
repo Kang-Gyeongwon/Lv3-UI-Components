@@ -23,6 +23,7 @@ export const ModalContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    position: relative;
     & > div {
         width: 100%;
     }
