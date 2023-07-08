@@ -1,6 +1,7 @@
 import "./App.css";
 import GlobalStyle from "./styles/GlobalStyle";
 import Button from "./components/Shared/Button";
+import InputBox from "./components/InputBox";
 import ButtonBox from "./components/ButtonBox";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
               <Button color="danger" size="small">Small Button</Button>
             </div>
             <ButtonBox />
+            <InputBox />
         </>
     );
 }
