@@ -13,7 +13,6 @@ const Button = (props) => {
     console.log("children ",  children);
     const onBtnClick = () => {
         handleBtnClick !== undefined && handleBtnClick(); // 이벤트 함수가 전달되었을 시 실행
-        alert("click!"); // ! 이벤트 체크용, 이후 제거
     };
 
     return (
