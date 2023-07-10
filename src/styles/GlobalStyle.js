@@ -6,6 +6,12 @@ const GlobalStyle = createGlobalStyle`
     * {
         font-family: Helvetica;
         button { border: 0; }
+
+        select {
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            appearance: none;
+            }
     }
 `;
 
