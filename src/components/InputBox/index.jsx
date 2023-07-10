@@ -19,7 +19,7 @@ const InputBox = () => {
   };
 
   const onAdd = () => {
-    formValue.title === null || formValue.price === null
+    formValue.title === null || formValue.price === 0
       ? window.alert("이름과 가격 모두 입력해주세요.")
       : window.alert(`name: ${formValue.title}, price: ${formValue.price}`);
     setFormValue({
