@@ -10,12 +10,11 @@ const SelectBox = (props) => {
     }
 
     return (
-    <StSelectBox onChange={onChangeValue}>
-        {options.map((option) => {
+    <StSelectBox onChange={onChangeValue} defaultValue={defaultValue}>
+        {options.map((option, idx) => {
             return (<option
-                key={option.value}
+                key={idx}
                 value={option.value}
-                selected={defaultValue === option.value}
             >
                 {option.name}
             </option>)

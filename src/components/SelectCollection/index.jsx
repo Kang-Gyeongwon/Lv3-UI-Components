@@ -15,7 +15,7 @@ function SelectCollection() {
     return (
         <StSelectCollection>
             <Title>Select</Title>
-            <SelectBox options={OPTIONS} defaultValue="banana" />
+            <SelectBox options={OPTIONS} defaultValue="kiwi" />
         </StSelectCollection>
     );
 }
