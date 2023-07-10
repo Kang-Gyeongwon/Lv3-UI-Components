@@ -1,8 +1,8 @@
 import React from "react";
 import SelectBox from "../Shared/SelectBox";
-import { Title, StSelectContainer } from "./styled";
+import { Title, StSelectCollection } from "./styled";
 
-function SelectContainer() {
+function SelectCollection() {
     // * SelectBox 임시 데이터
     const OPTIONS = [
         { value: "apple", name: "사과" },
@@ -13,11 +13,11 @@ function SelectContainer() {
     ];
 
     return (
-        <StSelectContainer>
+        <StSelectCollection>
             <Title>Select</Title>
             <SelectBox options={OPTIONS} defaultValue="banana" />
-        </StSelectContainer>
+        </StSelectCollection>
     );
 }
 
-export default SelectContainer;
+export default SelectCollection;

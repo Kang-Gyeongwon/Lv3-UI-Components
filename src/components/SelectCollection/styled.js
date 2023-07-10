@@ -6,7 +6,7 @@ export const Title = styled.h1`
     margin-bottom: 1rem;
 `;
 
-export const StSelectContainer = styled.div`
+export const StSelectCollection = styled.div`
     border: 3px solid lightblue;
     margin-top: 2rem;
     padding: 3rem 1rem;
