@@ -5,6 +5,8 @@ import ModalInfo from "./components/Shared/ModalInfo";
 import ModalConfirm from "./components/Shared/ModalConfirm";
 import ModalPortal from "./Portal";
 import { useState } from "react";
+import InputBox from "./components/InputBox";
+import ButtonBox from "./components/ButtonBox";
 
 function App() {
     const [isOnModalInfo, setIsOnModalInfo] = useState(false); // ModalInfo 토글 state
@@ -92,6 +94,8 @@ function App() {
                     </ModalConfirm>
                 )}
             </ModalPortal>
+            <ButtonBox />
+            <InputBox />
         </>
     );
 }
