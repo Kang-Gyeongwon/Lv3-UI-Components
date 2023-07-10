@@ -8,12 +8,11 @@ import Icon from "../Icon";
 // onClick: 버튼에 전달할 클릭 이벤트 함수
 // isIconRight: 아이콘 있을 시 위치 텍스트의 오른쪽(true)/왼쪽(false) 선택
 const Button = (props) => {
-    const {handleBtnClick, color, size, negative, icon, isIconRight, children} = props;
+    const { handleBtnClick, color, size, negative, icon, isIconRight, children } = props;
     console.log("props ", props);
-    console.log("children ",  children);
+    console.log("children ", children);
     const onBtnClick = () => {
         handleBtnClick !== undefined && handleBtnClick(); // 이벤트 함수가 전달되었을 시 실행
-        alert("click!"); // ! 이벤트 체크용, 이후 제거
     };
 
     return (
