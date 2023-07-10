@@ -2,7 +2,7 @@ import React from "react";
 import { StSelectBox } from "./styled";
 
 const SelectBox = (props) => {
-    const { options, isHidden, defaultValue } = props;
+    const { options, defaultValue } = props;
 
     // SelectBox onChange 이벤트 함수
     const onChangeValue = (e) => {
