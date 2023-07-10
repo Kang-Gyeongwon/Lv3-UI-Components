@@ -9,7 +9,6 @@ import Icon from "../Icon";
 // isIconRight: 아이콘 있을 시 위치 텍스트의 오른쪽(true)/왼쪽(false) 선택
 const Button = (props) => {
     const { handleBtnClick, color, size, negative, icon, isIconRight = true, children } = props;
-    console.log("isIconRight", typeof isIconRight);
     const onBtnClick = () => {
         handleBtnClick !== undefined && handleBtnClick(); // 이벤트 함수가 전달되었을 시 실행
     };
