@@ -19,7 +19,7 @@ const getBtnColor = (colorType, isHover = false) => {
 
 export const StyledButton = styled.button`
     display: flex;
-    flex-direction: ${(props) => (props.isIconRight ? "row" : "row-reverse")};
+    flex-direction: ${(props) => (props.$isIconRight ? "row" : "row-reverse")};
     justify-content: center;
     align-items: center;
     height: 2rem;
@@ -40,7 +40,7 @@ export const StyledButton = styled.button`
         display: block;
         width: 1rem;
         height: 1rem;
-        ${(props) => (props.isIconRight ? "margin-left: 0.25rem;" : "margin-right: 0.25rem;")};
+        ${(props) => (props.$isIconRight ? "margin-left: 0.25rem;" : "margin-right: 0.25rem;")};
         background-size: cover;
     }
 
